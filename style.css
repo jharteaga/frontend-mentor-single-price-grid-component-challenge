@@ -92,6 +92,7 @@ body {
     padding-top: 12px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.12);
     margin-top: 30px;
+    transition: .5s ease;
 }
 
 .sign-up a{
@@ -101,7 +102,8 @@ body {
 
 .sign-up:hover{
     cursor: pointer;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 0 0 3px #525c18;
+    transition: .5s ease;
 }
 
 /* Why Section */
