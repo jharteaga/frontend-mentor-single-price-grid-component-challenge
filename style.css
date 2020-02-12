@@ -6,7 +6,6 @@
     --bright-yellow: hsl(71, 73%, 54%);
     --light-gray: hsl(204, 43%, 93%);
     --grayish-blue: hsl(218, 22%, 67%);
-    --min-desktop-resolution: 801px;
 }
 
 /*********************/
@@ -24,8 +23,10 @@ body {
     margin: 3rem 2rem;
 }
 
-.flex-row{
-    min-width: 100%;
+.flex-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .section {
@@ -37,8 +38,8 @@ body {
 /* Community Section*/
 .community {
     background-color: #fff;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .community h2 {
@@ -101,8 +102,8 @@ body {
 /* Why Section */
 .why {
     background-color: var(--light-cyan);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .why h2 {
@@ -118,7 +119,6 @@ body {
 }
 
 /* Footer */
-
 footer {
     text-align: center;
     color: var(--grayish-blue);
@@ -127,4 +127,48 @@ footer {
 footer a {
     color: rgba(0, 0, 255, 0.65);
 }
+
+/**********************************/
+/*        DESKTOP DESIGN          */
+/**********************************/
+
+@media (min-width: 1056px) {
+    .container {
+        margin: 100px 28%;
+        align-items: stretch;
+        box-shadow: 0.04 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .flex-row {
+        flex-direction: row;
+    }
+
+    .community {
+       flex-basis: 100%;
+    }
+    .community h2 {
+        font-size: 1.4rem;
+    }
+
+    .community h3 {
+        font-size: 1.2rem;
+    }
+
+    .community p{
+        font-size: 1rem;
+    }
+
+    .subscription {
+        flex-basis: 50%;
+        border-bottom-left-radius: 10px;
+    }
+
+    .why {
+        flex-basis: 50%;
+        border-bottom-left-radius: 0px;
+    }
+
+
+}
+
 
