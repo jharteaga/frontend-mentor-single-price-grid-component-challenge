@@ -94,6 +94,11 @@ body {
     margin-top: 30px;
 }
 
+.sign-up:hover{
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.3);
+}
+
 .sign-up a{
     text-decoration: none;
     color: var(--light-gray);
